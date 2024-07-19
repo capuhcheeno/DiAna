@@ -794,7 +794,7 @@ saveRDS(Demo,paste0(data_directory,"/DEMO.rds"))
 
 ## Probabilistic deduplication ----------------------------------------------
 ###upload datasets--------------
-data_directory <- "Data/23Q1/"
+data_directory <- "Data/24Q1/"
 Drug <- setDT(readRDS(paste0(data_directory,"DRUG.rds")))[,.(primaryid,drug_seq,substance)][!is.na(substance)][order(substance)] %>% distinct()
 temp <- Drug[,.N,by=c("primaryid","drug_seq")]
 temp_single <- Drug[temp[N==1],on=c("primaryid","drug_seq")][
