@@ -447,7 +447,7 @@ rm(list=ls())
 
 ## Dates and duration standardization ---------------------------------------
 #please change according to the last quarter
-max_date <- 20231231
+max_date <- 20240331
 
 Demo <- setDT(readRDS("Clean Data/DEMO.rds"))
 
