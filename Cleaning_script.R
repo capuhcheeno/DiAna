@@ -654,7 +654,7 @@ saveRDS(Demo,"Clean Data/DEMO.rds")
 # replace the name of the directory
 # according to the last quarter downloaded
 
-data_directory <- "Data/23Q4"
+data_directory <- "Data/24Q1"
 
 dir.create(data_directory, recursive = TRUE)
 Demo_Supp <-  Demo[,.(primaryid,caseid,caseversion,i_f_cod,auth_num,e_sub,
@@ -744,7 +744,7 @@ rm(list = ls())
 # replace the name of the directory
 # according to the last quarter downloaded
 
-data_directory <- "Data/23Q4"
+data_directory <- "Data/24Q1"
 
 Reac <- setDT(readRDS(paste0(data_directory,"/REAC.rds")))
 Demo <- setDT(readRDS(paste0(data_directory,"/DEMO.rds")))
